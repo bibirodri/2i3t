@@ -1,0 +1,1 @@
+function alo_mundo(){}
