@@ -1,44 +1,15 @@
-insere_ultimo 
-let lista_nome = ["breno","eduardo", "beatris", "calebe","emanuela"];
-function atualizar_lista (){
-    let nome = "";
-    if (lista_nome. length > 0){
-        for(let i=0 ; i < lista_nome.length; i++ ){
-            nome += lista_nome [i] +  "<br> ";
-        }
-        document.getElementById("lista"). innerHTML = nomes; 
-        return;
-    }
-    document.getElementById ("lista"). innerHTML = "lista vaiza "
-
+escrever = msg => alert(msg);
+soma = (a,b) => a + b;
+sub = (a,b) => a - b;
+mult = (a,b) => a * b;
+div = (a,b) => a / b;
+raiz = a => Math.sqrt(a);
+equacao2Grau = (a,b,c) => {
+    let delta = sub(mult(b,b),mult(4,mult(a,c)));
+    if (delta < 0) return "Não possui raiz Real.";
+    if (delta == 0) return "x1 = x2 = " + div(-b,mult(2,a));
+    return "x1 = " + div (soma(-b,raiz(delta)),mult(2,a)) + 
+           "x2 = " + div (sub(-b,raiz(delta)),mult(2,a));
 }
 
-function insere_ultimo (){
-    let nome = document. getElementById ( "nome").value;
-    if (nome != "")
-        lista_nome.push(nome);
-        document. getElementById ( "nome").value;
-        atualizar_lista();
-    }
-  function deleta_ultimo(){
-    lista_nome.shift ()
-    atualizar_lista();
-  }
-  function insere_primeira (){
-    let nome = document.getElementById("nome").value;
-  if (nome != "")
-  lista_nome.unshift(nome)
-  document.getElementById ("nome"). value = "";
-  atualizar_lista()
-  }
-  
-function deleta_primeira(){
-     lista_nome. shift ();
-     atualizar_lista (); 
-}
- function deleta_tudo(){
-    lista_nome. shift (); 
-    atualizar_lista (); 
- }
-
-//Fazer os botões deletar_ultimo inserir_primero deltar_primero e limpar_lista
+escrever(equacao2Grau(3,-2,-1));
