@@ -1,10 +1,11 @@
-.barra_superior{
-    background-color: blueviolet;
-}
-.conteudo{
-    background-color: rgba(171, 0, 194, 0.89);
+@import url(calc_simples.css);
 
+.barra_superior {
+    background-color: rgb(68, 218, 238);
 }
-.rodape{
-    background-color: rgb(151, 5, 170);
+.conteudo {
+    background-color: rgb(175, 232, 240);
+}
+.rodape {
+    background-color: rgb(68, 218, 238);
 }
