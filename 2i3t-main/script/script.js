@@ -145,33 +145,5 @@ const set_valor_b = () => {
 const set_valor_c = () => {
     c = document.getElementById("valor_c").value;
     calcular_equacao();
-} 
-let pa_a1 = "";
-let pa_r = "";
-let pa_n = "";
-const setpa_a1 = ()  ==>{
-    pa_a1 = number (document.getElementById("pa_a1").value);
-    mostrarpa_seq();
-    
- }
- const setpa_a1 = ()  ==>{
-    pa_n = number (document.getElementById("pa_n").value);
-    mostrarpa_seq();
-    
- }
- const setpa_a1 = ()  ==>{
-    pa_r = number (document.getElementById("pa_r").value);
-    mostrarpa_seq();
-    
- }
-const mostrarpa_seq = () => {
-let pa ="";
-if(pa_a1 != "") pa += pa_a1;
-if(pa_r !="" && pa_n !=""){
-    for(let i = 1; i < pa_n; i++ ){
-        pa +=" , " + (i * pa_r) + pa_a1;
-    }
-        
-    } 
-    document.getElementById("pa_seq").innerHTML = pa;
 }
+

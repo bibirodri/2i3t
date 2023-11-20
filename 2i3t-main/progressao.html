@@ -15,14 +15,29 @@
         Cálculo da razão: r = a<sub>2</sub> - a<sub>1</sub> <br><br>
         Cálculo do último termo (n): a<sub>n</sub> = a<sub>1</sub> + (n-1) * r <br><br>
         Soma de n termos: S<sub>n</sub> = (a<sub>1</sub> + a<sub>n</sub>) * n / 2 <br><br>
-        <div class="calculoPA">
-             a<sub>1</sub><sub></sub>: <input onchange="setpa_al()" type="number" id="pa_al"><br>
-             r = <input type="number" id="pa_r"><br>
-             n = <input type="number" id="pa_n"><br>
-              sequencia: <span id="pa_seq"></span>
-        </div> 
-        
+
+    <div class="calculoPA">
+        a<sub>1</sub> = <input type="number" onchange="setpa_a1()" id="pa_a1">
+        r = <input type="number" onchange="setpa_r()" id="pa_r">
+        n = <input type="number" onchange="setpa_n()" id="pa_n">
+        Sequência: <span id="pa_seq"></span>
+    </div>
     </section>
+     
+    <section id="pg">
+        <h1> Progressão Geometrica</h1>
+        P.A. a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub> ... a<sub>n</sub> <br><br>
+        Cálculo da razão: r = a<sub>2</sub> - a<sub>1</sub> <br><br>
+        Cálculo do último termo (n): a<sub>n</sub> = a<sub>1</sub> + (n-1) * r <br><br>
+        Soma de n termos: S<sub>n</sub> = (a<sub>1</sub> + a<sub>n</sub>) * n / 2 <br><br>
+        
+        a<sub>1</sub> = <input type="number" onchange="setpa_a1()" id="pa_a1">
+        r = <input type="number" onchange="setpa_r()" id="pa_r">
+        n = <input type="number" onchange="setpa_n()" id="pa_n">
+        Sequência: <span id="pa_seq"></span>
+
+        </sub>
+     </section>
 </body>
 
 </html>
