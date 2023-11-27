@@ -1,11 +1,19 @@
+@import url(calc_simples.css);
+
 .barra_superior {
-    background-color: blueviolet;
+    background-color: rgb(68, 218, 238);
 }
-
 .conteudo {
-    background-color: chocolate;
+    background-color: rgb(175, 232, 240);
 }
-
 .rodape {
-    background-color: rgb(218, 218, 9);
+    background-color: rgb(68, 218, 238);
+}
+.imagens {
+    width: 100;
+    text-align:center;
+}
+#figura{
+    width: 640;
+    height: 360px;
 }
